@@ -47,6 +47,14 @@ const Footer = () => {
         alignItems:"center",
         color: "#b0b0b0",
     }
+    const contactHeader = {
+        lineHeight:"0px"
+    }
+
+    const contactIcon = {
+        fontSize: "40px",
+        marginRight:"20px"
+    }
     return (
         <div style={footerBG}>
             <Container>
@@ -118,28 +126,28 @@ const Footer = () => {
                     <Grid item xs={12} md={6} lg={3} style={footerDiv}>
                         <h3 style={footerTitle}>CONTACT US</h3>
                         <div style={contactStyle}>
-                        <LocationOnIcon></LocationOnIcon>
+                        <LocationOnIcon style={contactIcon}></LocationOnIcon>
                         <div>
-                            <h4>Adress</h4>
+                            <h2 style={contactHeader}>Adress</h2>
                         <p> Lube, Oil and Filters</p>
                         </div>
                         
                         </div>
 
                         <div style={contactStyle}>
-                        <PrintIcon></PrintIcon>
+                        <PrintIcon style={contactIcon}></PrintIcon>
                         <div>
-                            <h4>Adress</h4>
+                            <h2 style={contactHeader}>Adress</h2>
                         <p> Lube, Oil and Filters</p>
                         </div>
                         
                         </div>
 
                         <div style={contactStyle}>
-                        <PhoneAndroidIcon></PhoneAndroidIcon>
+                        <PhoneAndroidIcon style={contactIcon}></PhoneAndroidIcon>
                         <div>
-                            <h4>Adress</h4>
-                        <p> Lube, Oil and Filters</p>
+                            <h2 style={contactHeader}>Adress</h2>
+                        <p> Lube, Oil and Filterss</p>
                         </div>
                         
                         </div>
