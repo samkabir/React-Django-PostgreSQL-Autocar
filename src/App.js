@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Components/Home/Home/Home";
-import Footer from "./Components/Shared/Footer/Footer";
-import Header from "./Components/Shared/Header/Header";
+import Home from "./Pages/Home/Home/Home";
+import Footer from "./Pages/Shared/Footer/Footer";
+import Header from "./Pages/Shared/Header/Header";
 
 
 function App() {
