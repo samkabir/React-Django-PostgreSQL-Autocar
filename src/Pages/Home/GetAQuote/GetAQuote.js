@@ -8,7 +8,7 @@ const GetAQuote = () => {
     
     return (
         <div>
-            <Container sx={{pt: 10}}>
+            <Container sx={{pt: 10 }}>
                 <Grid container spacing={0}>
                     <Grid item xs={12} md={6}>
                         <Title>Everything you need to <br /> build <span> an amazing dealership <br />website.</span></Title>
