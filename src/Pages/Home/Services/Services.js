@@ -5,6 +5,9 @@ import styled from "styled-components";
 import image1 from '../../../images/pic1_002.jpg';
 import image2 from '../../../images/pic2_003.jpg';
 import image3 from '../../../images/pic3_003.jpg';
+import image4 from '../../../images/pic4.jpg';
+import image5 from '../../../images/pic5.jpg';
+import image6 from '../../../images/pic6.jpg';
 
 const Services = () => {
     return (
@@ -43,6 +46,36 @@ const Services = () => {
                             </Cards>
                         </ParentCard>
                     </Grid>
+                    <Grid item xs={12} md={4}>
+                        <ParentCard>
+                            <Image src={image4} alt="Service1" /> 
+                            <Cards>
+                                <h4>Engineering Chemistry</h4>
+                                <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
+                                <button>Read More</button>
+                            </Cards>
+                        </ParentCard>
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <ParentCard>
+                            <Image src={image5} /> 
+                            <Cards>
+                                <h4>Oil {`&`} Gas Energy</h4>
+                                <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
+                                <button>Read More</button>
+                            </Cards>
+                        </ParentCard>
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <ParentCard>
+                            <Image src={image6} /> 
+                            <Cards>
+                                <h4>Bridge Construction</h4>
+                                <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
+                                <button>Read More</button>
+                            </Cards>
+                        </ParentCard>
+                    </Grid>
                 </Grid>
             </Container>
         </Wrapper>
@@ -74,7 +107,7 @@ const Services = () => {
         margin-left: -8px;
     `;
     const ParentCard = styled.div`
-        margin: 0px 20px;
+        margin: 10px 20px;
     `;
 
     const Title = styled.h2`
