@@ -34,7 +34,7 @@ const Banner = () => {
         />
         <Carousel.Caption className="caption">
           <h1 style={sliderHederStyle}>Make Your Car</h1>
-          <h1 style={sliderHederStyle}>Last Longer</h1>
+          <h1 style={sliderHederStyle}>Last Longer.</h1>
           <p> There are many variations of passages of Lorem Ipsum typesetting industry.</p>
           <Button variant="contained" style={buttonStyle}>Read More</Button>
         </Carousel.Caption>
