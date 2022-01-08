@@ -22,9 +22,12 @@ const Banner = () => {
     padding:"15px 30px",
     marginTop:"40px"
   }
+  const bannnerIndex = {
+    zIndex: '-1'
+  }
     
     return (
-      <Carousel fade>
+      <Carousel style= {bannnerIndex}>
       <Carousel.Item className="carousel-item">
         <img
         style={imageStyle}
