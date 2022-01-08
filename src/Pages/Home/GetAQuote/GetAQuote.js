@@ -1,4 +1,11 @@
 import React from 'react';
+<<<<<<< HEAD
+
+const GetAQuote = () => {
+    return (
+        <div>
+            <h2>This is Get A Quote</h2>
+=======
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import styled from "styled-components";
@@ -20,10 +27,13 @@ const GetAQuote = () => {
                     </Grid>
                 </Grid>
             </Container>
+>>>>>>> 37c80afb5c8b4ddae05542488e195bbd3a0a3266
         </div>
     );
 };
 
+<<<<<<< HEAD
+=======
     const Title = styled.h1`
     font-weight: 700;
      > span{
@@ -46,4 +56,5 @@ const GetAQuote = () => {
     `;
 
 
+>>>>>>> 37c80afb5c8b4ddae05542488e195bbd3a0a3266
 export default GetAQuote;

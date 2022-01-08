@@ -32,7 +32,11 @@ const ThreeCard = () => {
     return (
         <Container>
             <Box sx={{ display:'flex', flexDirection:'row', justifyContent: 'center' ,mt: '-100px'}}>
+<<<<<<< HEAD
+                <Card sx={{ maxWidth: 345, py: 6, px:8, backgroundColor: '#f3f3f3', boxShadow:'0px 0px #000000', borderRadius:'0px' }}>
+=======
                 <Card sx={{ minWidth: 350, py: 6, px:8, backgroundColor: '#f3f3f3', boxShadow:'0px 0px #000000', borderRadius:'0px' }}>
+>>>>>>> 37c80afb5c8b4ddae05542488e195bbd3a0a3266
                     <Box sx={{display:'flex', justifyContent: 'center'}}>
                         <HeadsetMicOutlinedIcon sx={{color:'orange', fontSize: 60,  fontWeight: 'light'}}/>
                     </Box>
@@ -50,7 +54,11 @@ const ThreeCard = () => {
                         </CardActions>
                     </Box>
                 </Card>
+<<<<<<< HEAD
+                <Card sx={{ maxWidth: 345, py: 6, px:8, backgroundImage: `url(${img})`, boxShadow:'0px 0px #000000', borderRadius:'0px'  }}>
+=======
                 <Card sx={{ minWidth: 350, py: 6, px:8, backgroundImage: `url(${img})`, boxShadow:'0px 0px #000000', borderRadius:'0px'  }}>
+>>>>>>> 37c80afb5c8b4ddae05542488e195bbd3a0a3266
                     <Box sx={{display:'flex', justifyContent: 'center'}}>
                         <StackedBarChartOutlinedIcon sx={{color:'white', fontSize: 60,  fontWeight: 'light'}}/>
                     </Box>
@@ -68,7 +76,11 @@ const ThreeCard = () => {
                         </CardActions>
                     </Box>
                 </Card>
+<<<<<<< HEAD
+                <Card sx={{ maxWidth: 345, py: 6, px:8, backgroundColor: '#f3f3f3', boxShadow:'0px 0px #000000', borderRadius:'0px' }}>
+=======
                 <Card sx={{ minWidth: 350, py: 6, px:8, backgroundColor: '#f3f3f3', boxShadow:'0px 0px #000000', borderRadius:'0px' }}>
+>>>>>>> 37c80afb5c8b4ddae05542488e195bbd3a0a3266
                     <Box sx={{display:'flex', justifyContent: 'center'}}>
                         <EmojiEventsOutlinedIcon sx={{color:'orange', fontSize: 60,  fontWeight: 'light'}}/>
                     </Box>
