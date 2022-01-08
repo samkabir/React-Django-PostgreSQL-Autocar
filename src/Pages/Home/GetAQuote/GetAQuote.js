@@ -8,18 +8,17 @@ const GetAQuote = () => {
     
     return (
         <div>
-            <Container sx={{pt: 10 }}>
-                <Grid container spacing={0}>
-                    <Grid item xs={12} md={6}>
-                        <Title>Everything you need to <br /> build <span> an amazing dealership <br />website.</span></Title>
-                        <Paragraph>There are many variations of passages of Lorem Ipsum typesetting industry<br /> has been the industry's standard dummy text ever since the been when an <br /> unknown printer.</Paragraph>
-                        <Button>GET A QUOTE</Button>
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                        <img src={image} alt="" /> 
-                    </Grid>
+            <Container >
+            <Grid container spacing={0}>
+                <Grid item xs={12} md={6}>
+                    <h2>This is Title and Paragraph</h2>
                 </Grid>
+                <Grid item xs={12} md={6}>
+                    <h2>This is the image section</h2>
+                </Grid>
+            </Grid>
             </Container>
+            <h2>This is Get A Quote</h2>
         </div>
     );
 };
