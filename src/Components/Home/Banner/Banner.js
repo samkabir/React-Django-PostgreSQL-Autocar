@@ -13,9 +13,9 @@ const Banner = () => {
     objectFit:"cover"
   }
 
-  const sliderHederStyle = {
-    fontSize: "80px"
-  }
+  // const sliderHederStyle = {
+  //   fontSize: "80px"
+  // }
   const buttonStyle = {
     backgroundColor: "#f68220",
     borderRadius:"0px",
@@ -33,8 +33,8 @@ const Banner = () => {
           alt="First slide"
         />
         <Carousel.Caption className="caption">
-          <h1 style={sliderHederStyle}>Make Your Car</h1>
-          <h1 style={sliderHederStyle}>Last Longer.</h1>
+          <h1 className="slideHeaderStyle">Make Your Car</h1>
+          <h1 className="slideHeaderStyle">Last Longer</h1>
           <p> There are many variations of passages of Lorem Ipsum typesetting industry.</p>
           <Button variant="contained" style={buttonStyle}>Read More</Button>
         </Carousel.Caption>
@@ -48,8 +48,8 @@ const Banner = () => {
         />
     
         <Carousel.Caption className="caption">
-        <h1 style={sliderHederStyle}>Make Your Car</h1>
-          <h1 style={sliderHederStyle}>Last Longer</h1>
+        <h1 className="slideHeaderStyle">Make Your Car</h1>
+          <h1 className="slideHeaderStyle">Last Longer</h1>
           <p> There are many variations of passages of Lorem Ipsum typesetting industry.</p>
           <Button variant="contained" style={buttonStyle}>Read More</Button>
         </Carousel.Caption>
@@ -63,8 +63,8 @@ const Banner = () => {
         />
     
         <Carousel.Caption className="caption">
-        <h1 style={sliderHederStyle}>Make Your Car</h1>
-          <h1 style={sliderHederStyle}>Last Longer</h1>
+        <h1 className="slideHeaderStyle">Make Your Car</h1>
+          <h1 className="slideHeaderStyle">Last Longer</h1>
           <p> There are many variations of passages of Lorem Ipsum typesetting industry.</p>
           <Button variant="contained" style={buttonStyle}>Read More</Button>
         </Carousel.Caption>
