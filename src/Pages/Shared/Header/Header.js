@@ -18,6 +18,10 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 
 const Header = () => {
+
+    const headerStyle = {
+        paddingBottom : "0px"
+    }
   
     return (
         <div>
@@ -41,7 +45,7 @@ const Header = () => {
                     </Toolbar>
                 </AppBar>   
             </Box>
-            <Box sx={{ flexGrow: 1, pb: 2 }}>
+            <Box sx={{ flexGrow: 1, pb: 2 }} style={headerStyle}>
                 <AppBar style={{ background: '#ffffff' }} position="static">
                     <Toolbar>
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>

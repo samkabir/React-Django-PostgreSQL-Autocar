@@ -13,3 +13,15 @@
   .caption{
       bottom: 200px !important;
   }
+  .slideHeaderStyle{
+      font-size: 80px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .caption{
+        bottom: 120px !important;
+    }
+    .slideHeaderStyle{
+        font-size: 50px;
+    }
+  }

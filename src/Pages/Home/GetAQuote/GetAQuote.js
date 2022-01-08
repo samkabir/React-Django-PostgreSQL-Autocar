@@ -13,6 +13,7 @@ const GetAQuote = () => {
                 </Grid>
             </Grid>
             </Container>
+            <h2>This is Get A Quote</h2>
         </div>
     );
 };
