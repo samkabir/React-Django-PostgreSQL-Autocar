@@ -117,10 +117,10 @@ const Services = () => {
             color:#f68220;
             background-color: white;
         };
-        @media (min-width: 768px){
+        @media only screen and ${breakpoint.device.sm}{
 
         };
-        @media (min-width: 1024px){
+        @media only screen and ${breakpoint.device.xs}{
 
         };
     `;
@@ -133,11 +133,11 @@ const Services = () => {
     `;
     const ParentCard = styled.div`
         margin: 10px 20px;
-        @media only screen and ${breakpoint.device.xs}{
-            display: none;
-        };
         @media only screen and ${breakpoint.device.sm}{
             display: flex;
+        };
+        @media only screen and ${breakpoint.device.xs}{
+            display: none;
         };
     `;
 
