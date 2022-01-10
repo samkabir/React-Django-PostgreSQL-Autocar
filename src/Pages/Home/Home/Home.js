@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 import Clients from '../Clients/Clients';
+import EmailandSupport from '../EmailandSupport/EmailandSupport';
 import GetAQuote from '../GetAQuote/GetAQuote';
 import Maps from '../Maps/Maps';
 import Partners from '../Partners/Partners';
@@ -19,6 +20,7 @@ const Home = () => {
             <Clients></Clients>
             <Partners></Partners>
             <Maps></Maps>
+            <EmailandSupport></EmailandSupport>
         </div>
     );
 };

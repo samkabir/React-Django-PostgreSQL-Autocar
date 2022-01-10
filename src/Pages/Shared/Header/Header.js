@@ -1,4 +1,4 @@
-import {React, useState } from 'react';
+import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,21 +14,17 @@ import GoogleIcon from '@mui/icons-material/Google';
 import logo from '../../../images/logo-black3.png';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-import CancelIcon from '@mui/icons-material/Cancel';
-import MenuIcon from '@mui/icons-material/Menu';
-import "./Header.css";
 
 
 const Header = () => {
-    const [isActive,setActive] =useState(false);
-    function handleToggle(menu) {
-        setActive(!isActive);
+
+    const headerStyle = {
+        paddingBottom : "0px"
     }
-    
+  
     return (
         <div>
             <Box sx={{ flexGrow: 1  }}>
-                {/* top bar */}
                 <AppBar style={{ background: '#303338' }} position="static">
                     <Toolbar>
                         <Typography sx={{ flexGrow: 1 }}>
@@ -48,9 +44,8 @@ const Header = () => {
                     </Toolbar>
                 </AppBar>   
             </Box>
-            <Box sx={{ flexGrow: 1, pb: 2 }} >
+            <Box sx={{ flexGrow: 1, pb: 2 }} style={headerStyle}>
                 <AppBar style={{ background: '#ffffff' }} position="static">
-                    {/* Navigation Bar */}
                     <Toolbar>
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                             <Link style={{textDecoration:'none', color:'black'}} to="/">
@@ -59,39 +54,15 @@ const Header = () => {
                         </Typography>
                         <Box>
                             <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">HOME</Button></Link>
-                            <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">FEATURES</Button></Link>
-                            <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">PAGES</Button></Link>
-                            <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">SHOP</Button></Link>
-                            <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">BLOG</Button></Link>
-                            <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">SHORTCODES</Button></Link>
-                            <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">CONTACT US</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/cars"><Button color="inherit">CARS</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/aboutUs"><Button color="inherit">ABOUT US</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/contactUs"><Button color="inherit">CONTACT US</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/login"><Button color="inherit">LOGIN</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/signUp"><Button color="inherit">SIGNUP</Button></Link>
                             <SearchIcon sx={{color: '#000000', mx: 2 }} />
                             <ShoppingBagIcon sx={{color: '#000000', mx: 2 }} />
                             <Link style={{textDecoration:'none', color:'white'}} to="/"><Button sx={{ backgroundColor:'#f68220', p:3}} color="inherit">GET A QUOTE</Button></Link>
                         </Box>
-                        <div id="hamburger-icon" onClick={handleToggle} >
-                        {
-                            isActive?<CancelIcon /> : <MenuIcon />
-                        }
-                            
-                            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                                <Link style={{textDecoration:'none', color:'black'}} to="/">
-                                    <img src={logo} alt="Company LOGO" width="200" height="50" /> 
-                                </Link>
-                            </Typography>
-                            <Box>
-                                <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">HOME</Button></Link>
-                                <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">FEATURES</Button></Link>
-                                <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">PAGES</Button></Link>
-                                <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">SHOP</Button></Link>
-                                <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">BLOG</Button></Link>
-                                <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">SHORTCODES</Button></Link>
-                                <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">CONTACT US</Button></Link>
-                                <SearchIcon sx={{color: '#000000', mx: 2 }} />
-                                <ShoppingBagIcon sx={{color: '#000000', mx: 2 }} />
-                                <Link style={{textDecoration:'none', color:'white'}} to="/"><Button sx={{ backgroundColor:'#f68220', p:3}} color="inherit">GET A QUOTE</Button></Link>
-                            </Box>
-                        </div>
                     </Toolbar>
                 </AppBar>   
             </Box>
