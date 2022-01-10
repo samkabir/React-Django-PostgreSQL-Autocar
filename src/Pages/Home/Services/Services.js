@@ -18,7 +18,9 @@ const Services = () => {
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={4}>
                         <ParentCard>
-                            <Image src={image1} alt="Service1" /> 
+                            <div>
+                                <Image src={image1} /> 
+                            </div>
                             <Cards>
                                 <h4>Engineering Chemistry</h4>
                                 <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
@@ -28,27 +30,9 @@ const Services = () => {
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <ParentCard>
-                            <Image src={image2} /> 
-                            <Cards>
-                                <h4>Oil {`&`} Gas Energy</h4>
-                                <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
-                                <button>Read More</button>
-                            </Cards>
-                        </ParentCard>
-                    </Grid>
-                    <Grid item xs={12} md={4}>
-                        <ParentCard>
-                            <Image src={image3} /> 
-                            <Cards>
-                                <h4>Bridge Construction</h4>
-                                <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
-                                <button>Read More</button>
-                            </Cards>
-                        </ParentCard>
-                    </Grid>
-                    <Grid item xs={12} md={4}>
-                        <ParentCard>
-                            <Image src={image4} alt="Service1" /> 
+                            <div>
+                                <Image src={image2} /> 
+                            </div>
                             <Cards>
                                 <h4>Engineering Chemistry</h4>
                                 <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
@@ -58,9 +42,11 @@ const Services = () => {
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <ParentCard>
-                            <Image src={image5} /> 
+                            <div>
+                                <Image src={image3} /> 
+                            </div>
                             <Cards>
-                                <h4>Oil {`&`} Gas Energy</h4>
+                                <h4>Engineering Chemistry</h4>
                                 <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
                                 <button>Read More</button>
                             </Cards>
@@ -68,9 +54,35 @@ const Services = () => {
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <ParentCard>
-                            <Image src={image6} /> 
+                            <div>
+                                <Image src={image4} /> 
+                            </div>
                             <Cards>
-                                <h4>Bridge Construction</h4>
+                                <h4>Engineering Chemistry</h4>
+                                <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
+                                <button>Read More</button>
+                            </Cards>
+                        </ParentCard>
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <ParentCard>
+                            <div>
+                                <Image src={image5} /> 
+                            </div>
+                            <Cards>
+                                <h4>Engineering Chemistry</h4>
+                                <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
+                                <button>Read More</button>
+                            </Cards>
+                        </ParentCard>
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <ParentCard>
+                            <div>
+                                <Image src={image6} /> 
+                            </div>
+                            <Cards>
+                                <h4>Engineering Chemistry</h4>
                                 <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
                                 <button>Read More</button>
                             </Cards>
@@ -88,7 +100,8 @@ const Services = () => {
     `;
     const Cards = styled.div`
         background-color: white;
-        margin: 0px 15px;
+        margin: 0px 10px;
+        margin-top:-20px;
         padding: 20px;
         > h4 {
             font-size: 20px;
@@ -105,12 +118,15 @@ const Services = () => {
         };
     `;
     const Image = styled.img`
+        position:relative;
+        z-index:-1;
         height: 230px;
         width: 350px;
         margin-left: -8px;
     `;
     const ParentCard = styled.div`
         margin: 10px 20px;
+        
     `;
 
     const Title = styled.h2`
