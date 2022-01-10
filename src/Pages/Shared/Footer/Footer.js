@@ -12,51 +12,9 @@ import PrintIcon from '@mui/icons-material/Print';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
+import breakpoint from '../../Shared/Breakpoints/Breakpoints';
+
 const Footer = () => {
-    const footerBG = {
-        backgroundColor: "#212529",
-        paddingTop: "30px",
-        paddingBottom: "30px"
-    };
-    const footerTitle = {
-        color: "white"
-    };
-    const textColor = {
-        color: "#b0b0b0"
-    };
-    const footerText = {
-        color: "#b0b0b0",
-
-        borderBottom: "2px dashed rgba(102,102,102,.11)",
-        display: "flex",
-        alignItems: "center"
-    }
-    const iconStyle = {
-
-        color: "white",
-        padding: "0px",
-        marginRight: "10px",
-        border: "1px solid white"
-    };
-    const footerDiv = {
-        paddingLeft: "15px",
-        paddingRight: "15px"
-    }
-
-    const contactStyle = {
-        display: "flex",
-        alignItems: "center",
-        color: "#b0b0b0",
-    }
-    const contactHeader = {
-        lineHeight: "0px",
-        fontSize:"16px"
-    }
-
-    const contactIcon = {
-        fontSize: "40px",
-        marginRight: "20px"
-    }
     return (
         <div>
             <div style={footerBG}>
@@ -179,6 +137,50 @@ const Footer = () => {
         </div>
     );
 };
+const footerBG = {
+    backgroundColor: "#212529",
+    paddingTop: "30px",
+    paddingBottom: "30px"
+};
+const footerTitle = {
+    color: "white"
+};
+const textColor = {
+    color: "#b0b0b0"
+};
+const footerText = {
+    color: "#b0b0b0",
+
+    borderBottom: "2px dashed rgba(102,102,102,.11)",
+    display: "flex",
+    alignItems: "center"
+}
+const iconStyle = {
+
+    color: "white",
+    padding: "0px",
+    marginRight: "10px",
+    border: "1px solid white"
+};
+const footerDiv = {
+    paddingLeft: "15px",
+    paddingRight: "15px"
+}
+
+const contactStyle = {
+    display: "flex",
+    alignItems: "center",
+    color: "#b0b0b0",
+}
+const contactHeader = {
+    lineHeight: "0px",
+    fontSize:"16px"
+}
+
+const contactIcon = {
+    fontSize: "40px",
+    marginRight: "20px"
+}
 
 const Footer2 = styled.div`
     background-color: #14191c;
@@ -190,6 +192,17 @@ const Footer2 = styled.div`
 const Footer2Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
+    @media only screen and ${breakpoint.device.sm}{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    };
+    @media only screen and ${breakpoint.device.xs}{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    };
+
 `;
 const BottomNavigation = styled.div`
     display:flex;
