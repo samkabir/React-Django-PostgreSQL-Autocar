@@ -84,21 +84,24 @@ const Services = () => {
 
     const Wrapper = styled.div`
         margin-top: 100px;
-        text-align: center;
+        
     `;
     const Cards = styled.div`
-        text-align: center;
         background-color: white;
         margin: 0px 15px;
-        padding: 10px;
+        padding: 20px;
         > h4 {
             font-size: 20px;
         };
         > p {
             font-size: 15px;
-        }
-        >button {
-            font-size: 14px; 
+        };
+        > button {
+            font-size: 14px;
+            border: 0px solid;
+            display:flex;
+            color:#f68220;
+            background-color: white;
         };
     `;
     const Image = styled.img`
