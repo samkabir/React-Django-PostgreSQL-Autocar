@@ -84,7 +84,7 @@ const Services = () => {
 
     const Wrapper = styled.div`
         margin-top: 100px;
-        
+        margin-bottom: 80px;
     `;
     const Cards = styled.div`
         background-color: white;
@@ -114,11 +114,13 @@ const Services = () => {
     `;
 
     const Title = styled.h2`
+        text-align:center;
         color:#f68220;
         font-weight:700;
         font-size: 30px;
     `;
     const Description = styled.p`
+    text-align:center;
         color: #848484;
         font-size: 12px;
         margin-bottom: 30px;
