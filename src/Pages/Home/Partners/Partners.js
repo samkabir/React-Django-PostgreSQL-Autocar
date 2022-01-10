@@ -4,27 +4,74 @@ import styled from "styled-components";
 import logo1 from "../../../images/logo1.jpg";
 import logo2 from "../../../images/logo2.jpg";
 import logo3 from "../../../images/logo3.jpg";
-import logo4 from "../../../images/logo4.jpg";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 const Partners = () => {
     return (
         <PartnersSection>
             <Container maxWidth="lg" >
-                <div className="image-container">
-                    <img src={logo3} className="images" alt="logo1" height="80px"   />
-                
-                    <img src={logo1} className="images" alt="logo1" height="80px"   />
-                
-                    <img src={logo2} className="images" alt="logo1" height="80px"   />
-                
-                    <img src={logo1} className="images" alt="logo1" height="80px"   />
-                
-                    <img src={logo3} className="images" alt="logo1" height="80px"   />
-                </div>
+                <LargeCarousel>
+                    <div className="image-container">
+                        <img src={logo3} className="images" alt="logo1" height="80px"   />
+                    
+                        <img src={logo1} className="images" alt="logo1" height="80px"   />
+                    
+                        <img src={logo2} className="images" alt="logo1" height="80px"   />
+                    
+                        <img src={logo1} className="images" alt="logo1" height="80px"   />
+                    
+                        <img src={logo3} className="images" alt="logo1" height="80px"   />
+                    </div>
+                </LargeCarousel>
+                <MobileCarousel>
+                    <Carousel autoPlay={true} infiniteLoop={true}>
+                        <div>
+                            <img src={logo3} className="images" />
+                        </div>
+                        <div>
+                            <img src={logo1} className="images" />
+                        </div>
+                        <div>
+                            <img src={logo2} className="images" />
+                        </div>
+                        <div>
+                            <img src={logo1} className="images" />
+                        </div>
+                        <div>
+                            <img src={logo3} className="images" />
+                        </div>
+                    </Carousel>
+                </MobileCarousel>
             </Container>
         </PartnersSection>
     );
 };
+const MobileCarousel = styled.div`
+    .carousel-status{
+        display: none;
+    }
+    @media only screen and (max-width: 1280px) {
+        .control-dots{
+            display: none;
+        };
+        .thumbs-wrapper{
+            display: none;
+        };
+        .control-arrow{
+            display: none;
+        };
+    };
+    @media only screen and (min-width: 1280px){
+        display:none;
+    }
+`;
+
+const LargeCarousel = styled.div`
+    @media only screen and (max-width: 1280px){
+        display:none;
+    };
+`;
 
 const PartnersSection = styled.div`
     margin-top: 80px;
