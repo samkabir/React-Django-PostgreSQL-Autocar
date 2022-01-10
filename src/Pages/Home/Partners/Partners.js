@@ -27,6 +27,7 @@ const Partners = () => {
 };
 
 const PartnersSection = styled.div`
+    margin-top: 80px;
     background-color: #f68220;
     display: flex;
     flex-direction: row;

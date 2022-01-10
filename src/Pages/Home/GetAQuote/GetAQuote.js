@@ -1,11 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
-
-const GetAQuote = () => {
-    return (
-        <div>
-            <h2>This is Get A Quote</h2>
-=======
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import styled from "styled-components";
@@ -14,7 +7,7 @@ import image from '../../../images/thum1.jpg';
 const GetAQuote = () => {
     
     return (
-        <div>
+        <Wrapper>
             <Container sx={{pt: 10}}>
                 <Grid container spacing={0}>
                     <Grid item xs={12} md={6}>
@@ -27,13 +20,12 @@ const GetAQuote = () => {
                     </Grid>
                 </Grid>
             </Container>
->>>>>>> 37c80afb5c8b4ddae05542488e195bbd3a0a3266
-        </div>
+        </Wrapper>
     );
 };
-
-<<<<<<< HEAD
-=======
+    const Wrapper = styled.div`
+        margin-bottom: 80px;
+    `;
     const Title = styled.h1`
     font-weight: 700;
      > span{
@@ -56,5 +48,4 @@ const GetAQuote = () => {
     `;
 
 
->>>>>>> 37c80afb5c8b4ddae05542488e195bbd3a0a3266
 export default GetAQuote;
