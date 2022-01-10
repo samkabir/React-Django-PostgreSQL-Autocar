@@ -1,15 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
-
-const Services = () => {
-    return (
-        <div>
-            <h2>This is Services Section</h2>
-        </div>
-    );
-};
-
-=======
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import styled from "styled-components";
@@ -135,5 +124,4 @@ const Services = () => {
         margin-bottom: 30px;
     `
 
->>>>>>> 37c80afb5c8b4ddae05542488e195bbd3a0a3266
 export default Services;
