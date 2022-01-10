@@ -55,12 +55,11 @@ const Header = () => {
                         </Typography>
                         <Box>
                             <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">HOME</Button></Link>
-                            <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">FEATURES</Button></Link>
-                            <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">PAGES</Button></Link>
-                            <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">SHOP</Button></Link>
-                            <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">BLOG</Button></Link>
-                            <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">SHORTCODES</Button></Link>
-                            <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">CONTACT US</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/cars"><Button color="inherit">CARS</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/aboutUs"><Button color="inherit">ABOUT US</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/contactUs"><Button color="inherit">CONTACT US</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/login"><Button color="inherit">LOGIN</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/signUp"><Button color="inherit">SIGNUP</Button></Link>
                             <SearchIcon sx={{color: '#000000', mx: 2 }} />
                             <ShoppingBagIcon sx={{color: '#000000', mx: 2 }} />
                             <Link style={{textDecoration:'none', color:'white'}} to="/"><Button sx={{ backgroundColor:'#f68220', p:3}} color="inherit">GET A QUOTE</Button></Link>

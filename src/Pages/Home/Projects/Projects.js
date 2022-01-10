@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Carousel } from 'react-bootstrap';
-import ProjectsCarousel from '../../ProjectsCarousel/ProjectsCarousel';
+import ProjectsCarousel from '../ProjectsCarousel/ProjectsCarousel';
 import { Height } from '@mui/icons-material';
 
 
