@@ -8,6 +8,7 @@ import image3 from '../../../images/pic3_003.jpg';
 import image4 from '../../../images/pic4.jpg';
 import image5 from '../../../images/pic5.jpg';
 import image6 from '../../../images/pic6.jpg';
+import breakpoint from '../../Shared/Breakpoints/Breakpoints';
 
 const Services = () => {
     return (
@@ -116,6 +117,12 @@ const Services = () => {
             color:#f68220;
             background-color: white;
         };
+        @media only screen and ${breakpoint.device.sm}{
+
+        };
+        @media only screen and ${breakpoint.device.xs}{
+
+        };
     `;
     const Image = styled.img`
         position:relative;
@@ -126,7 +133,12 @@ const Services = () => {
     `;
     const ParentCard = styled.div`
         margin: 10px 20px;
-        
+        @media only screen and ${breakpoint.device.sm}{
+            display: flex;
+        };
+        @media only screen and ${breakpoint.device.xs}{
+            display: none;
+        };
     `;
 
     const Title = styled.h2`
