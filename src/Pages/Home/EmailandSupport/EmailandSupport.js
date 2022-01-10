@@ -33,6 +33,9 @@ const DivContainer =styled.div`
         display: flex;
         margin-left:10%;
     };
+    > h3 {
+        font-weight: 700;
+    }
 `;
 const DivContainer1 =styled.div`
     background-color: #f68220;
@@ -47,6 +50,9 @@ const DivContainer1 =styled.div`
         display: flex;
         margin-left:10%;
     };
+    > h3 {
+        font-weight: 700;
+    }
 `;
 
 export default EmailandSupport;
