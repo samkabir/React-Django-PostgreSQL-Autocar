@@ -1,4 +1,5 @@
 import * as React from 'react';
+import styled from "styled-components";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -31,64 +32,81 @@ const ThreeCard = () => {
     }
     return (
         <Container>
-            <Box sx={{ display:'flex', flexDirection:'row', justifyContent: 'center' ,mt: '-100px'}}>
-                <Card sx={{ minWidth: 350, py: 6, px:8, backgroundColor: '#f3f3f3', boxShadow:'0px 0px #000000', borderRadius:'0px' }}>
-                    <Box sx={{display:'flex', justifyContent: 'center'}}>
-                        <HeadsetMicOutlinedIcon sx={{color:'orange', fontSize: 60,  fontWeight: 'light'}}/>
-                    </Box>
-                    <CardContent>
-                        <Typography gutterBottom style={title} component="div">
-                            CERTIFIED
-                        </Typography>
-                        <Typography gutterBottom style={shortDes} component="div">
-                            We are young <br /> talented certified<br /> engineers
-                        </Typography>
-                    </CardContent>
-                    <Box sx={{display:'flex', justifyContent: 'center'}}>
-                        <CardActions>
-                            <Button style={button} >Read More</Button>
-                        </CardActions>
-                    </Box>
-                </Card>
-                <Card sx={{ minWidth: 350, py: 6, px:8, backgroundImage: `url(${img})`, boxShadow:'0px 0px #000000', borderRadius:'0px'  }}>
-                    <Box sx={{display:'flex', justifyContent: 'center'}}>
-                        <StackedBarChartOutlinedIcon sx={{color:'white', fontSize: 60,  fontWeight: 'light'}}/>
-                    </Box>
-                    <CardContent>
-                        <Typography gutterBottom sx={{color:'white!important'}} style={title} component="div">
-                            CERTIFIED
-                        </Typography>
-                        <Typography gutterBottom style={shortDes} sx={{color:'white'}} component="div">
-                            We are young <br /> talented certified<br /> engineers
-                        </Typography>
-                    </CardContent>
-                    <Box sx={{display:'flex', justifyContent: 'center'}}>
-                        <CardActions>
-                            <Button style={button} >Read More</Button>
-                        </CardActions>
-                    </Box>
-                </Card>
-                <Card sx={{ minWidth: 350, py: 6, px:8, backgroundColor: '#f3f3f3', boxShadow:'0px 0px #000000', borderRadius:'0px' }}>
-                    <Box sx={{display:'flex', justifyContent: 'center'}}>
-                        <EmojiEventsOutlinedIcon sx={{color:'orange', fontSize: 60,  fontWeight: 'light'}}/>
-                    </Box>
-                    <CardContent>
-                        <Typography gutterBottom style={title} component="div">
-                            CERTIFIED
-                        </Typography>
-                        <Typography gutterBottom style={shortDes} component="div">
-                            We are young <br /> talented certified<br /> engineers
-                        </Typography>
-                    </CardContent>
-                    <Box sx={{display:'flex', justifyContent: 'center'}}>
-                        <CardActions>
-                            <Button style={button} >Read More</Button>
-                        </CardActions>
-                    </Box>
-                </Card>
-            </Box>
+            <Wrapper>
+                <Box sx={{ display:'flex', flexDirection:'row', justifyContent: 'center' ,mt: '-100px'}}>
+                    <Card sx={{ minWidth: 350, py: 6, px:8, backgroundColor: '#f3f3f3', boxShadow:'0px 0px #000000', borderRadius:'0px' }}>
+                        <Box sx={{display:'flex', justifyContent: 'center'}}>
+                            <HeadsetMicOutlinedIcon sx={{color:'orange', fontSize: 60,  fontWeight: 'light'}}/>
+                        </Box>
+                        <CardContent>
+                            <Typography gutterBottom style={title} component="div">
+                                CERTIFIED
+                            </Typography>
+                            <Typography gutterBottom style={shortDes} component="div">
+                                We are young <br /> talented certified<br /> engineers
+                            </Typography>
+                        </CardContent>
+                        <Box sx={{display:'flex', justifyContent: 'center'}}>
+                            <CardActions>
+                                <Button style={button} >Read More</Button>
+                            </CardActions>
+                        </Box>
+                    </Card>
+                    <Card sx={{ minWidth: 350, py: 6, px:8, backgroundImage: `url(${img})`, boxShadow:'0px 0px #000000', borderRadius:'0px'  }}>
+                        <Box sx={{display:'flex', justifyContent: 'center'}}>
+                            <StackedBarChartOutlinedIcon sx={{color:'white', fontSize: 60,  fontWeight: 'light'}}/>
+                        </Box>
+                        <CardContent>
+                            <Typography gutterBottom sx={{color:'white!important'}} style={title} component="div">
+                                CERTIFIED
+                            </Typography>
+                            <Typography gutterBottom style={shortDes} sx={{color:'white'}} component="div">
+                                We are young <br /> talented certified<br /> engineers
+                            </Typography>
+                        </CardContent>
+                        <Box sx={{display:'flex', justifyContent: 'center'}}>
+                            <CardActions>
+                                <Button style={button} >Read More</Button>
+                            </CardActions>
+                        </Box>
+                    </Card>
+                    <Card sx={{ minWidth: 350, py: 6, px:8, backgroundColor: '#f3f3f3', boxShadow:'0px 0px #000000', borderRadius:'0px' }}>
+                        <Box sx={{display:'flex', justifyContent: 'center'}}>
+                            <EmojiEventsOutlinedIcon sx={{color:'orange', fontSize: 60,  fontWeight: 'light'}}/>
+                        </Box>
+                        <CardContent>
+                            <Typography gutterBottom style={title} component="div">
+                                CERTIFIED
+                            </Typography>
+                            <Typography gutterBottom style={shortDes} component="div">
+                                We are young <br /> talented certified<br /> engineers
+                            </Typography>
+                        </CardContent>
+                        <Box sx={{display:'flex', justifyContent: 'center'}}>
+                            <CardActions>
+                                <Button style={button} >Read More</Button>
+                            </CardActions>
+                        </Box>
+                    </Card>
+                </Box>
+            </Wrapper>
         </Container>
     );
 };
+
+const Wrapper = styled.div`
+    @media only screen and (max-width: 1280px){
+        display:flex;
+        flex-direction: column;
+        margin-top: 150px;
+    };
+    
+    `;
+
+const Cards = styled.div`
+    @media only screen and (max-width: 1280px){
+
+    }
+`;
 
 export default ThreeCard;
