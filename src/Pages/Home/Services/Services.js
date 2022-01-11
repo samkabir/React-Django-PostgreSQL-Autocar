@@ -134,10 +134,10 @@ const Services = () => {
     const ParentCard = styled.div`
         margin: 10px 20px;
         @media only screen and ${breakpoint.device.sm}{
-            display: flex;
+            
         };
         @media only screen and ${breakpoint.device.xs}{
-            display: none;
+            
         };
     `;
 
