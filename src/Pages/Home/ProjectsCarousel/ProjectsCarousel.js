@@ -4,24 +4,36 @@ import { Carousel } from 'react-responsive-carousel';
 import img1 from '../../../images/pic1.jpg';
 import img2 from '../../../images/pic2.jpg';
 import img3 from '../../../images/pic3_002.jpg';
+import styled from "styled-components";
 
 const ProjectsCarousel = () => {
     return (
-        <Carousel autoPlay>
-            <div>
-                <img src={img1} />
-                <p className="legend">Legend 1</p>
-            </div>
-            <div>
-                <img src={img2} />
-                <p className="legend">Legend 2</p>
-            </div>
-            <div>
-                <img src={img3} />
-                <p className="legend">Legend 3</p>
-            </div>
-        </Carousel>
+        <Wrapper>
+            <Carousel autoPlay={true} infiniteLoop={true} transitionTime={800}>
+                <div>
+                    <img src={img1} />
+                </div>
+                <div>
+                    <img src={img2} />
+                </div>
+                <div>
+                    <img src={img3} />
+                </div>
+            </Carousel>
+        </Wrapper>
     );
 };
+const Wrapper = styled.div`
+    .carousel-status{
+        display: none;
+    };
+    .thumbs-wrapper{
+        display: none;
+    };
+    .control-arrow{
+        display: none;
+    
+    };
+`;
 
 export default ProjectsCarousel;

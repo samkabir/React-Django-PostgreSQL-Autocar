@@ -11,13 +11,20 @@ import image6 from '../../../images/pic6.jpg';
 import breakpoint from '../../Shared/Breakpoints/Breakpoints';
 
 const Services = () => {
+    const [services, setServices] = useState([])
+    useEffect( () => {
+        fetch('services.JSON')
+        .then(res => res.json())
+        .then(data => setServices(data))
+    },[]);
+
     return (
         <Wrapper>
             <Container>
                 <Title>OUR SERVICES</Title>
                 <Description>There are many variations of passages of Lorem Ipsum typesetting industry has been the industry's <br /> standard dummy text ever since the been when an unknown printer. </Description>
                 <Grid container spacing={2}>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={6}>
                         <ParentCard>
                             <div>
                                 <Image src={image1} /> 
