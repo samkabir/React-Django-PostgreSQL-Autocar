@@ -1,4 +1,5 @@
 import * as React from 'react';
+import styled from "styled-components";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -26,22 +27,38 @@ const Header = () => {
         <div>
             <Box sx={{ flexGrow: 1  }}>
                 <AppBar style={{ background: '#303338' }} position="static">
-                    <Toolbar>
-                        <Typography sx={{ flexGrow: 1 }}>
-                            <Link style={{textDecoration:'none', color:'white' }} to="/">
-                                <LocalPhoneIcon sx={{color: '#d8721c' }} /> <Typography sx={{color:'white', mr: 3 }} variant="overline" > + 91 123 456 7890 </Typography>
-                            </Link>
-                            <Link style={{textDecoration:'none', color:'white'}} to="/">
-                                <SupportIcon sx={{color: '#d8721c' }} /> <Typography sx={{color:'white', mr: 3}} variant="overline" >  Certified ISO 9001 : 2008 </Typography>
-                            </Link>
-                            <Link style={{textDecoration:'none', color:'white'}} to="/">
-                                <SupportIcon sx={{color: '#d8721c' }} /> <Typography sx={{color:'white', mr: 3}} variant="overline" >  Mon-Fri: 8am - 7pm </Typography>
-                            </Link>
-                        </Typography>
-                        <Box>
-                            <FacebookIcon sx={{mx:1}} /> <TwitterIcon sx={{mx:1}}/><LinkedInIcon sx={{mx:1}}/> < GoogleIcon sx={{mx:1}} />
-                        </Box>
-                    </Toolbar>
+                        <Toolbar>
+                            <Typography sx={{ flexGrow: 1 }}>
+                                <Header1Support>
+                                    <div>
+                                        <Link style={{textDecoration:'none', color:'white' }} to="/">
+                                            <LocalPhoneIcon sx={{color: '#d8721c' }} /> <Typography sx={{color:'white', mr: 3 }} variant="overline" > + 91 123 456 7890 </Typography>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link style={{textDecoration:'none', color:'white'}} to="/">
+                                            <SupportIcon sx={{color: '#d8721c' }} /> <Typography sx={{color:'white', mr: 3}} variant="overline" >  Certified ISO 9001 : 2008 </Typography>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link style={{textDecoration:'none', color:'white'}} to="/">
+                                            <SupportIcon sx={{color: '#d8721c' }} /> <Typography sx={{color:'white', mr: 3}} variant="overline" >  Mon-Fri: 8am - 7pm </Typography>
+                                        </Link>
+                                    </div>
+                                </Header1Support>
+                            </Typography>
+                            <Box>
+                                <Header1MediaIcons>
+                                        <div>
+                                            <FacebookIcon sx={{mx:1}} /> <TwitterIcon sx={{mx:1}}/> 
+                                        </div>
+                                        <div>
+                                            <LinkedInIcon sx={{mx:1}}/> < GoogleIcon sx={{mx:1}} />
+                                        </div>
+                                </Header1MediaIcons>
+                            </Box>
+                        </Toolbar>
+                    
                 </AppBar>   
             </Box>
             <Box sx={{ flexGrow: 1, pb: 2 }} style={headerStyle}>
@@ -69,5 +86,30 @@ const Header = () => {
         </div>
     );
 };
+
+const Header1Support = styled.div`
+    @media only screen and (max-device-width: 768px){
+        display:flex;
+        flex-direction:column;
+    };
+    @media only screen and (min-width: 992px) and (max-width: 1199px){
+        display:flex;
+        flex-direction:row;
+    };
+    @media only screen and (min-width: 1199px){
+        display:flex;
+        flex-direction:row;
+    };
+`;
+const Header1MediaIcons = styled.div`
+    @media only screen and (max-width: 768px){
+        display:flex;
+        flex-direction:column;
+    };
+    @media only screen and (min-width: 1199px){
+        display:flex;
+        flex-direction:row;
+    };
+`;
 
 export default Header;
