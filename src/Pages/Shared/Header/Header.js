@@ -17,13 +17,17 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 
 
 const Header = () => {
-
+    const [isActive,setActive] =React.useState(false)
+    function handleToggle(menu) {
+        setActive(!isActive);
+    };
     const headerStyle = {
         paddingBottom : "0px"
     }
   
     return (
         <div>
+            {/* Top Info Bar */}
             <Box sx={{ flexGrow: 1  }}>
                 <AppBar style={{ background: '#303338' }} position="static">
                         <Toolbar>
@@ -60,6 +64,7 @@ const Header = () => {
                     
                 </AppBar>   
             </Box>
+            {/* Nav Bar */}
             <Box sx={{ flexGrow: 1, pb: 2 }} style={headerStyle}>
                 <AppBar style={{ background: '#ffffff' }} position="static">
                     <Navbar collapseOnSelect sticky="top" bg="white" expand="lg">
