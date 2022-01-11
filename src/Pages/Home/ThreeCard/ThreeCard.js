@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import { Container } from '@mui/material';
 import HeadsetMicOutlinedIcon from '@mui/icons-material/HeadsetMicOutlined';
 import { Box, textAlign } from '@mui/system';
-import img from '../../../images/pic2.jpg';
+// import img from '../../../images/pic2.jpg';
 import StackedBarChartOutlinedIcon from '@mui/icons-material/StackedBarChartOutlined';
 import EmojiEventsOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';
 
@@ -32,9 +32,9 @@ const ThreeCard = () => {
     }
     return (
         <Container>
-            <Wrapper>
-                <Box sx={{ display:'flex', flexDirection:'row', justifyContent: 'center' ,mt: '-100px'}}>
-                    <Card sx={{ minWidth: 350, py: 6, px:8, backgroundColor: '#f3f3f3', boxShadow:'0px 0px #000000', borderRadius:'0px' }}>
+            <Box>
+                <Wrapper>
+                    <Cards >
                         <Box sx={{display:'flex', justifyContent: 'center'}}>
                             <HeadsetMicOutlinedIcon sx={{color:'orange', fontSize: 60,  fontWeight: 'light'}}/>
                         </Box>
@@ -51,8 +51,8 @@ const ThreeCard = () => {
                                 <Button style={button} >Read More</Button>
                             </CardActions>
                         </Box>
-                    </Card>
-                    <Card sx={{ minWidth: 350, py: 6, px:8, backgroundImage: `url(${img})`, boxShadow:'0px 0px #000000', borderRadius:'0px'  }}>
+                    </Cards>
+                    <Cards id="middle-card" >
                         <Box sx={{display:'flex', justifyContent: 'center'}}>
                             <StackedBarChartOutlinedIcon sx={{color:'white', fontSize: 60,  fontWeight: 'light'}}/>
                         </Box>
@@ -69,8 +69,8 @@ const ThreeCard = () => {
                                 <Button style={button} >Read More</Button>
                             </CardActions>
                         </Box>
-                    </Card>
-                    <Card sx={{ minWidth: 350, py: 6, px:8, backgroundColor: '#f3f3f3', boxShadow:'0px 0px #000000', borderRadius:'0px' }}>
+                    </Cards>
+                    <Cards>
                         <Box sx={{display:'flex', justifyContent: 'center'}}>
                             <EmojiEventsOutlinedIcon sx={{color:'orange', fontSize: 60,  fontWeight: 'light'}}/>
                         </Box>
@@ -87,26 +87,42 @@ const ThreeCard = () => {
                                 <Button style={button} >Read More</Button>
                             </CardActions>
                         </Box>
-                    </Card>
-                </Box>
-            </Wrapper>
+                    </Cards>
+                </Wrapper>   
+            </Box>
         </Container>
     );
 };
 
 const Wrapper = styled.div`
-    @media only screen and (max-width: 1280px){
+    @media only screen and (max-device-width: 1199px){
         display:flex;
         flex-direction: column;
-        margin-top: 150px;
+        margin-top: 50px;
+
+        #middle-card {
+            background-image:url("../../../images/pic2.jpg");
+        }
+    };
+    @media only screen and (min-width: 1200px){
+        display:flex;
+        flex-direction:row;
     };
     
     `;
 
 const Cards = styled.div`
-    @media only screen and (max-width: 1280px){
-
-    }
+    @media only screen and (max-device-width: 1199px){
+        max-width: 300px; 
+        padding: 10px 30px;
+        margin: 10px 10px;
+        background-color: #f3f3f3;
+        box-shadow:0px 0px #000000; 
+        border-radius:0px;
+    };
+    @media only screen and (min-width: 1200px){
+        
+    };
 `;
 
 export default ThreeCard;
