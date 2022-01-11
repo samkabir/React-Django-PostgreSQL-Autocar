@@ -15,16 +15,22 @@ import GoogleIcon from '@mui/icons-material/Google';
 import logo from '../../../images/logo-black3.png';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 
 const Header = () => {
-
+    const [isActive,setActive] =React.useState(false)
+    function handleToggle(menu) {
+        setActive(!isActive);
+    };
     const headerStyle = {
         paddingBottom : "0px"
     }
   
     return (
         <div>
+            {/* Top Info Bar */}
             <Box sx={{ flexGrow: 1  }}>
                 <AppBar style={{ background: '#303338' }} position="static">
                         <Toolbar>
@@ -61,15 +67,19 @@ const Header = () => {
                     
                 </AppBar>   
             </Box>
+            {/* Nav Bar */}
             <Box sx={{ flexGrow: 1, pb: 2 }} style={headerStyle}>
                 <AppBar style={{ background: '#ffffff' }} position="static">
                     <Toolbar>
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            <Link style={{textDecoration:'none', color:'black'}} to="/">
-                                <img src={logo} alt="Company LOGO" width="200" height="50" /> 
-                            </Link>
+                            <Logo>
+                                <Link style={{textDecoration:'none', color:'black'}} to="/">
+                                    <img src={logo} alt="Company LOGO" width="200" height="50" /> 
+                                </Link>
+                            </Logo>
                         </Typography>
-                        <Box>
+                        
+                        <DesktopView>
                             <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">HOME</Button></Link>
                             <Link style={{textDecoration:'none', color:'black'}} to="/cars"><Button color="inherit">CARS</Button></Link>
                             <Link style={{textDecoration:'none', color:'black'}} to="/aboutUs"><Button color="inherit">ABOUT US</Button></Link>
@@ -79,7 +89,23 @@ const Header = () => {
                             <SearchIcon sx={{color: '#000000', mx: 2 }} />
                             <ShoppingBagIcon sx={{color: '#000000', mx: 2 }} />
                             <Link style={{textDecoration:'none', color:'white'}} to="/"><Button sx={{ backgroundColor:'#f68220', p:3}} color="inherit">GET A QUOTE</Button></Link>
-                        </Box>
+                        </DesktopView>
+
+                        <MobileView id="hamburger-icon" onClick={handleToggle}>
+                            {
+                                isActive? <CloseIcon /> : <MenuIcon />
+                            }
+                        
+                            <Link style={{textDecoration:'none', color:'black'}} to="/"><Button color="inherit">HOME</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/cars"><Button color="inherit">CARS</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/aboutUs"><Button color="inherit">ABOUT US</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/contactUs"><Button color="inherit">CONTACT US</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/login"><Button color="inherit">LOGIN</Button></Link>
+                            <Link style={{textDecoration:'none', color:'black'}} to="/signUp"><Button color="inherit">SIGNUP</Button></Link>
+                            <SearchIcon sx={{color: '#000000', mx: 2 }} />
+                            <ShoppingBagIcon sx={{color: '#000000', mx: 2 }} />
+                            <Link style={{textDecoration:'none', color:'white'}} to="/"><Button sx={{ backgroundColor:'#f68220', p:3}} color="inherit">GET A QUOTE</Button></Link>
+                        </MobileView>
                     </Toolbar>
                 </AppBar>   
             </Box>
@@ -109,6 +135,36 @@ const Header1MediaIcons = styled.div`
     @media only screen and (min-width: 1199px){
         display:flex;
         flex-direction:row;
+    };
+`;
+const MobileView = styled.div`
+    @media only screen and (max-device-width: 991px){
+        
+    };
+    @media only screen and (min-width: 992px){
+        display:none;
+    };
+`;
+const DesktopView = styled.div`
+    @media only screen and (max-device-width: 991px){
+        display:none;
+    };
+    @media only screen and (min-width: 992px) and (max-width: 1199px){
+        
+    };
+    @media only screen and (min-width: 1199px){
+        
+    };
+`;
+const Logo = styled.div`
+    @media only screen and (max-device-width: 768px){
+        
+    };
+    @media only screen and (min-width: 992px) and (max-width: 1199px){
+        
+    };
+    @media only screen and (min-width: 1199px){
+        
     };
 `;
 
