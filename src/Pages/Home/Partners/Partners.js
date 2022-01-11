@@ -25,7 +25,7 @@ const Partners = () => {
                     </div>
                 </LargeCarousel>
                 <MobileCarousel>
-                    <Carousel autoPlay={true} infiniteLoop={true} transitionTime={800}>
+                    <Carousel>
                         <div>
                             <img src={logo3} className="images" />
                         </div>
