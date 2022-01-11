@@ -24,78 +24,7 @@ const Services = () => {
                 <Title>OUR SERVICES</Title>
                 <Description>There are many variations of passages of Lorem Ipsum typesetting industry has been the industry's <br /> standard dummy text ever since the been when an unknown printer. </Description>
                 <Grid container spacing={2}>
-                    <Grid item xs={12} md={6}>
-                        <ParentCard>
-                            <div>
-                                <Image src={image1} /> 
-                            </div>
-                            <Cards>
-                                <h4>Engineering Chemistry</h4>
-                                <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
-                                <button>Read More</button>
-                            </Cards>
-                        </ParentCard>
-                    </Grid>
-                    <Grid item xs={12} md={4}>
-                        <ParentCard>
-                            <div>
-                                <Image src={image2} /> 
-                            </div>
-                            <Cards>
-                                <h4>Engineering Chemistry</h4>
-                                <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
-                                <button>Read More</button>
-                            </Cards>
-                        </ParentCard>
-                    </Grid>
-                    <Grid item xs={12} md={4}>
-                        <ParentCard>
-                            <div>
-                                <Image src={image3} /> 
-                            </div>
-                            <Cards>
-                                <h4>Engineering Chemistry</h4>
-                                <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
-                                <button>Read More</button>
-                            </Cards>
-                        </ParentCard>
-                    </Grid>
-                    <Grid item xs={12} md={4}>
-                        <ParentCard>
-                            <div>
-                                <Image src={image4} /> 
-                            </div>
-                            <Cards>
-                                <h4>Engineering Chemistry</h4>
-                                <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
-                                <button>Read More</button>
-                            </Cards>
-                        </ParentCard>
-                    </Grid>
-                    <Grid item xs={12} md={4}>
-                        <ParentCard>
-                            <div>
-                                <Image src={image5} /> 
-                            </div>
-                            <Cards>
-                                <h4>Engineering Chemistry</h4>
-                                <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
-                                <button>Read More</button>
-                            </Cards>
-                        </ParentCard>
-                    </Grid>
-                    <Grid item xs={12} md={4}>
-                        <ParentCard>
-                            <div>
-                                <Image src={image6} /> 
-                            </div>
-                            <Cards>
-                                <h4>Engineering Chemistry</h4>
-                                <p>Lorem ipsum dolor sit adipiscing elit sed diam nonummy nibh euismod.</p>
-                                <button>Read More</button>
-                            </Cards>
-                        </ParentCard>
-                    </Grid>
+                    
                 </Grid>
             </Container>
         </Wrapper>
