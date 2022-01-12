@@ -191,6 +191,7 @@ const Footer2 = styled.div`
 
 const Footer2Wrapper = styled.div`
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     @media only screen and ${breakpoint.device.sm}{
         display:flex;

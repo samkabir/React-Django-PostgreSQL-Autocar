@@ -81,7 +81,6 @@ const GetAQuote = () => {
         border: 0px;
         color: white;
         & hover: {
-
         }
     `;
 
