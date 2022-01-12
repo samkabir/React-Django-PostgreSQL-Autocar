@@ -27,14 +27,16 @@ const GetAQuote = () => {
     );
 };
     const Wrapper = styled.div`
-        
-        margin: 50px auto;
-        @media only screen and (min-device-width: 1199px){
-            display: flex;
-        };
+        display:flex;
+        justify-content: center;
         @media only screen and (max-device-width: 1199px){
-            display: flex;
+            align-items: center;
+            margin: 50px 0px;
             flex-direction:column;
+            
+        };
+        @media only screen and (min-width: 1200px){
+            margin: 50px 0px;
         };
     `;
     const Image = styled.img`
