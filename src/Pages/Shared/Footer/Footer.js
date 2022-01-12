@@ -194,13 +194,15 @@ const Footer2Wrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     @media only screen and ${breakpoint.device.sm}{
-        display:flex;
         flex-direction: column;
         align-items: center;
     };
     @media only screen and ${breakpoint.device.xs}{
-        display:flex;
         flex-direction: column;
+        align-items: center;
+    };
+    @media only screen and ${breakpoint.device.lg}{
+        flex-direction: row;
         align-items: center;
     };
 
