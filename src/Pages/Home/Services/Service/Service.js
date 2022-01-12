@@ -25,6 +25,7 @@ const Service = ({service}) => {
     `;
       const Cards = styled.div`
         background-color: white;
+        width: 300px;
         margin: 0px 10px;
         margin-top:-20px;
         padding: 20px;
@@ -47,7 +48,6 @@ const Service = ({service}) => {
         z-index:-1;
         height: 230px;
         width: 350px;
-        margin-left: -8px;
     `;
     
 
