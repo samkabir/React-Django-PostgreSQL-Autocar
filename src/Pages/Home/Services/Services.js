@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import styled from "styled-components";
@@ -8,7 +8,7 @@ import Service from './Service/Service';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect( () => {
-        fetch('data.json')
+        fetch('services.json')
         .then(res => res.json())
         .then(data => setServices(data.allservices))
     },[]);
