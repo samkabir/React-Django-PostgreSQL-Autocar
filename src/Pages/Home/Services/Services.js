@@ -19,19 +19,33 @@ const Services = () => {
             <Container>
                 <Title>OUR SERVICES</Title>
                 <Description>There are many variations of passages of Lorem Ipsum typesetting industry has been the industry's <br /> standard dummy text ever since the been when an unknown printer. </Description>
-                <Grid container spacing={2}>
-                {
-                    services.map(service => <Service
-                        key={service._id}
-                        service={service}
-                    ></Service>)
-                }
-                </Grid>
+                <GridWrapper>
+                    <Grid container spacing={2}>
+                    {
+                        services.map(service => <Service
+                            key={service._id}
+                            service={service}
+                        ></Service>)
+                    }
+                    </Grid>
+                </GridWrapper>
             </Container>
         </Wrapper>
     );
 };
 
+    const GridWrapper = styled.div`
+        display:flex;
+        justify-content: center;
+        @media only screen and (max-device-width: 1199px){
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        };
+        @media only screen and (min-width: 1200px){
+            flex-direction:row;
+        };
+    `;
     const Wrapper = styled.div`
         margin-top: 100px;
         margin-bottom: 80px;
