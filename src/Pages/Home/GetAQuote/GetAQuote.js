@@ -49,6 +49,7 @@ const GetAQuote = () => {
             width: 400px;
         };
     `;
+<<<<<<< Updated upstream
     const Playvideo = styled.div`
         @media only screen and (min-device-width: 1199px){
             .MuiSvgIcon-root{
@@ -63,6 +64,13 @@ const GetAQuote = () => {
                 margin-left:150px;
             };
         };
+=======
+    const Title = styled.h1`
+        font-weight: 700;
+        > span{
+            color: orange;
+        }
+>>>>>>> Stashed changes
     `;
     const Title = styled.h1`
         font-weight: 700;
